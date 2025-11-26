@@ -1,9 +1,10 @@
-# CloudTrail → SQS → Fluentd → Node.js → SQLite Pipeline
+# CloudTrail → SNS → SQS → Fluentd → Node.js → SQLite Pipeline
 
 This project demonstrates an end‑to‑end log ingestion pipeline:
 
 AWS CloudTrail  
 → S3  
+→ SNS
 → SQS  
 → Fluentd (running in Docker)  
 → Node.js app (REST API)  
